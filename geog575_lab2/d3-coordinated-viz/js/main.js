@@ -2,7 +2,7 @@
 (function(){
 console.log("Start of function");
 var attrArray = ["state","child0_18","adult19_25","adult26_34","adult35_54","adult55_64","elder65up"];
-    var expressed = attrArray[0]; //initial attribute one change
+    var expressed = attrArray[0]; //initial attribute
 
 //chart frame dimensions
     var chartWidth = window.innerWidth * 0.425,
@@ -51,6 +51,7 @@ console.log("Start of setMap");
     promises.push(d3.csv("data/popByAge2.csv")) //load attributes from csv
  //   promises.push(d3.json("data/landAmericas.topojson")) //load background spatial data
     promises.push(d3.json("data/usStates2.topojson")) //load choropleth spatial data
+    promises.push(d3.json("data/counties.topojson")) //load choropleth county data
     Promise.all(promises).then(callback);
 
     function callback(data){
