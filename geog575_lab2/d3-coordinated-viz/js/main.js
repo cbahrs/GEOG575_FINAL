@@ -2,7 +2,7 @@
 (function(){
 console.log("Start of function");
 var attrArray = ["state","child0_18","adult19_25","adult26_34","adult35_54","adult55_64","elder65up"];
-    var expressed = attrArray[0]; //initial attribute
+    var expressed = attrArray[0]; //initial attribute one change
 
 //chart frame dimensions
     var chartWidth = window.innerWidth * 0.425,
