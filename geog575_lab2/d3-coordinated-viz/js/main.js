@@ -48,7 +48,8 @@ console.log("Start of setMap");
         .projection(projection);
 
     var promises = [];
-    promises.push(d3.csv("data/popByAge2.csv")) //load attributes from csv
+    promises.push(d3.csv("data/Counties_Table.csv")) //load attributes from csv
+    promises.push(d3.csv("data/State_table.csv"))
  //   promises.push(d3.json("data/landAmericas.topojson")) //load background spatial data
     promises.push(d3.json("data/usStates2.topojson")) //load choropleth spatial data
     promises.push(d3.json("data/counties.topojson")) //load choropleth county data
