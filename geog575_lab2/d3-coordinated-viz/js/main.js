@@ -330,7 +330,7 @@ function makeColorScale(data) {
     //loop through csv to assign each set of csv attribute values to geojson region
         for (var i = 0; i < csvData.length; i++) {
             var csvRegion = csvData[i]; //the current region
-            var csvKey = csvRegion.STUSPS; //the CSV primary key
+            var csvKey = csvRegion.STUSPS; //the CSV primary key, primary CSV key needs to be changed.
 
             //loop through geojson states to find correct state
             for (var a = 0; a < choroplethStates.length; a++) {

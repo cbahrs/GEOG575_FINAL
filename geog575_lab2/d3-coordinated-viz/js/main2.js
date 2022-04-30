@@ -64,13 +64,13 @@ console.log("After setmap");
                 ageData = data[0];
                 states = data[1];
 
-                //console.log(ageData);
-                //console.log(states);
+                console.log(ageData);
+               // console.log(states);
 
                 //translate states TopoJson to GeoJson
                 var usStates = topojson.feature(states, states.objects.states19).features;
 
-                //console.log(usStates);
+                console.log(usStates);
 
                 //join csv data to GeoJSON enumeration units (states)
                 usStates = joinData(usStates, ageData);
